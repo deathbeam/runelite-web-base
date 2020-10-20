@@ -8,8 +8,9 @@
 	<description>Mostly used for generating data for website</description>
 
 	<properties>
-		<jsweet.transpiler.version>3.0.0-RC3</jsweet.transpiler.version>
-		<jsweet.core.version>6.2.0</jsweet.core.version>
+		<jsweet.groupId>org.jsweet.v3</jsweet.groupId>
+		<jsweet.transpiler.version>3.0.0-RC11</jsweet.transpiler.version>
+		<jsweet.core.version>6.0.0</jsweet.core.version>
 		<java.version.release>11</java.version.release>
 		<java.version>1.${java.version.release}</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -59,7 +60,7 @@
 				</configuration>
 			</plugin>
 			<plugin>
-				<groupId>org.jsweet</groupId>
+				<groupId>${jsweet.groupId}</groupId>
 				<artifactId>jsweet-maven-plugin</artifactId>
 				<version>${jsweet.transpiler.version}</version>
 				<configuration>
@@ -93,7 +94,7 @@
 	</build>
 	<dependencies>
 		<dependency>
-			<groupId>org.jsweet</groupId>
+			<groupId>${jsweet.groupId}</groupId>
 			<artifactId>jsweet-core</artifactId>
 			<version>${jsweet.core.version}</version>
 		</dependency>
