@@ -41,7 +41,7 @@ class PatchState
 
 	int getStages()
 	{
-		return cropState == CropState.HARVESTABLE ? produce.getHarvestStages() : produce.getStages();
+		return cropState == CropState.HARVESTABLE || cropState == CropState.FILLING ? produce.getHarvestStages() : produce.getStages();
 	}
 
 	int getTickRate()

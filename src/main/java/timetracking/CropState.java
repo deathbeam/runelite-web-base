@@ -29,5 +29,7 @@ public enum CropState
 	HARVESTABLE,
 	GROWING,
 	DISEASED,
-	DEAD;
+	DEAD,
+	EMPTY,
+	FILLING
 }
