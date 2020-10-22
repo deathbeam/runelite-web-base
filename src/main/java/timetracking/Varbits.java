@@ -26,49 +26,8 @@ package timetracking;
 
 public enum Varbits
 {
-	/**
-	 * Transmog controllers for farming
-	 */
-	FARMING_4771(4771),
-	FARMING_4772(4772),
-	FARMING_4773(4773),
-	FARMING_4774(4774),
-	FARMING_4775(4775),
-	FARMING_7904(7904),
-	FARMING_7905(7905),
-	FARMING_7906(7906),
-	FARMING_7907(7907),
-	FARMING_7908(7908),
-	FARMING_7909(7909),
-	FARMING_7910(7910),
-	FARMING_7911(7911),
-	FARMING_7912(7912),
+	TEST(1);
 
-	/**
-	 * Transmog controllers for grapes
-	 */
-	GRAPES_4953(4953),
-	GRAPES_4954(4954),
-	GRAPES_4955(4955),
-	GRAPES_4956(4956),
-	GRAPES_4957(4957),
-	GRAPES_4958(4958),
-	GRAPES_4959(4959),
-	GRAPES_4960(4960),
-	GRAPES_4961(4961),
-	GRAPES_4962(4962),
-	GRAPES_4963(4963),
-	GRAPES_4964(4964),
-
-	/**
-	 * Automatically weed farming patches
-	 */
-	AUTOWEED(5557),
-	;
-
-	/**
-	 * The raw varbit ID.
-	 */
 	private final int id;
 
 	Varbits(int id)
