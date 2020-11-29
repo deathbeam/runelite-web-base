@@ -8,20 +8,18 @@ import timetracking.PatchImplementation.Produce;
 
 public class FarmingTracker
 {
-	public PatchPrediction predictPatch(FarmingPatch patch, String configGroup, String autoweedConfigGroup, String username, BiFunction<String, String, String> getConfiguration)
+	public PatchPrediction predictPatch(FarmingPatch patch, BiFunction<String, String, String> getConfiguration)
 	{
 		long unixNow = (long) (new Date().getTime() / 1000);
 
-		boolean autoweed;
-		{
-			String group = configGroup + "." + username;
-			autoweed = Integer.toString(Autoweed.ON.ordinal())
-				.equals(getConfiguration.apply(group, autoweedConfigGroup));
-		}
+		boolean autoweed = Integer.toString(Autoweed.ON.ordinal())
+			.equals(getConfiguration.apply(TimeTrackingConfig.CONFIG_GROUP, TimeTrackingConfig.AUTOWEED));
 
-		String group = configGroup + "." + username + "." + patch.getRegion().getRegionID();
-		String key = Integer.toString(patch.getVarbit().getId());
-		String storedValue = getConfiguration.apply(group, key);
+		boolean botanist = Boolean.TRUE.toString()
+			.equals(getConfiguration.apply(TimeTrackingConfig.CONFIG_GROUP, TimeTrackingConfig.BOTANIST));
+
+		String key = patch.getRegion().getRegionID() + "." + patch.getVarbit().getId();
+		String storedValue = getConfiguration.apply(TimeTrackingConfig.CONFIG_GROUP, key);
 
 		if (storedValue == null)
 		{
@@ -60,6 +58,7 @@ public class FarmingTracker
 		int stage = state.getStage();
 		int stages = state.getStages();
 		int tickrate = state.getTickRate() * 60;
+		int farmingTickLength = 5 * 60;
 
 		if (autoweed && state.getProduce() == Produce.WEEDS)
 		{
@@ -68,14 +67,20 @@ public class FarmingTracker
 			tickrate = 0;
 		}
 
+		if (botanist)
+		{
+			tickrate /= 5;
+			farmingTickLength /= 5;
+		}
+
 		long doneEstimate = 0;
 		if (tickrate > 0)
 		{
-			long tickNow = (unixNow + (5 * 60)) / tickrate;
-			long tickTime = (unixTime + (5 * 60)) / tickrate;
+			long tickNow = (unixNow + farmingTickLength) / tickrate;
+			long tickTime = (unixTime + farmingTickLength) / tickrate;
 			int delta = (int) (tickNow - tickTime);
 
-			doneEstimate = ((stages - 1 - stage) + tickTime) * tickrate + (5 * 60);
+			doneEstimate = ((stages - 1 - stage) + tickTime) * tickrate + farmingTickLength;
 
 			stage += delta;
 			if (stage >= stages)
