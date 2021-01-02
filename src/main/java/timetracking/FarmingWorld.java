@@ -43,11 +43,11 @@ class FarmingWorld
 		// It may be worth it to add a specialization for these patches
 		add(new FarmingRegion("Al Kharid", 13106,
 			new FarmingPatch("", Varbits.FARMING_4771, PatchImplementation.CACTUS)
-		));
+		), 13362, 13105);
 
 		add(new FarmingRegion("Ardougne", 10290,
 			new FarmingPatch("", Varbits.FARMING_4771, PatchImplementation.BUSH)
-		));
+		), 10546);
 		add(new FarmingRegion("Ardougne", 10548,
 			new FarmingPatch("North", Varbits.FARMING_4771, PatchImplementation.ALLOTMENT),
 			new FarmingPatch("South", Varbits.FARMING_4772, PatchImplementation.ALLOTMENT),
@@ -59,7 +59,7 @@ class FarmingWorld
 		add(new FarmingRegion("Brimhaven", 11058,
 			new FarmingPatch("", Varbits.FARMING_4771, PatchImplementation.FRUIT_TREE),
 			new FarmingPatch("", Varbits.FARMING_4772, PatchImplementation.SPIRIT_TREE)
-		));
+		), 11057);
 
 		add(new FarmingRegion("Catherby", 11062,
 			new FarmingPatch("North", Varbits.FARMING_4771, PatchImplementation.ALLOTMENT),
@@ -67,7 +67,8 @@ class FarmingWorld
 			new FarmingPatch("", Varbits.FARMING_4773, PatchImplementation.FLOWER),
 			new FarmingPatch("", Varbits.FARMING_4774, PatchImplementation.HERB),
 			new FarmingPatch("", Varbits.FARMING_4775, PatchImplementation.COMPOST)
-		));
+		), 11061, 11318, 11317);
+
 		add(new FarmingRegion("Catherby", 11317,
 			new FarmingPatch("", Varbits.FARMING_4771, PatchImplementation.FRUIT_TREE)
 		));
@@ -82,7 +83,7 @@ class FarmingWorld
 
 		add(new FarmingRegion("Entrana", 11060,
 			new FarmingPatch("", Varbits.FARMING_4771, PatchImplementation.HOPS)
-		));
+		), 11316);
 
 		add(new FarmingRegion("Etceteria", 10300,
 			new FarmingPatch("", Varbits.FARMING_4771, PatchImplementation.BUSH),
@@ -91,7 +92,7 @@ class FarmingWorld
 
 		add(new FarmingRegion("Falador", 11828,
 			new FarmingPatch("", Varbits.FARMING_4771, PatchImplementation.TREE)
-		));
+		), 12084);
 		add(new FarmingRegion("Falador", 12083,
 			new FarmingPatch("North West", Varbits.FARMING_4771, PatchImplementation.ALLOTMENT),
 			new FarmingPatch("South East", Varbits.FARMING_4772, PatchImplementation.ALLOTMENT),
@@ -104,7 +105,8 @@ class FarmingWorld
 			new FarmingPatch("East", Varbits.FARMING_4771, PatchImplementation.HARDWOOD_TREE),
 			new FarmingPatch("Middle", Varbits.FARMING_4772, PatchImplementation.HARDWOOD_TREE),
 			new FarmingPatch("West", Varbits.FARMING_4773, PatchImplementation.HARDWOOD_TREE)
-		), 14907);
+		), 14907, 14908, 15164, 14652, 14906, 14650, 15162, 15163);
+
 		add(new FarmingRegion("Seaweed", 15008,
 			new FarmingPatch("North", Varbits.FARMING_4771, PatchImplementation.SEAWEED),
 			new FarmingPatch("South", Varbits.FARMING_4772, PatchImplementation.SEAWEED)
@@ -113,7 +115,7 @@ class FarmingWorld
 		add(new FarmingRegion("Gnome Stronghold", 9781,
 			new FarmingPatch("", Varbits.FARMING_4771, PatchImplementation.TREE),
 			new FarmingPatch("", Varbits.FARMING_4772, PatchImplementation.FRUIT_TREE)
-		));
+		), 9782, 9526, 9525);
 
 		add(new FarmingRegion("Harmony", 15148,
 			new FarmingPatch("", Varbits.FARMING_4771, PatchImplementation.ALLOTMENT),
@@ -125,11 +127,9 @@ class FarmingWorld
 			new FarmingPatch("South West", Varbits.FARMING_4772, PatchImplementation.ALLOTMENT),
 			new FarmingPatch("", Varbits.FARMING_4773, PatchImplementation.FLOWER),
 			new FarmingPatch("", Varbits.FARMING_4774, PatchImplementation.HERB),
-			new FarmingPatch("", Varbits.FARMING_4775, PatchImplementation.COMPOST)
-		));
-		add(new FarmingRegion("Kourend", 6711,
+			new FarmingPatch("", Varbits.FARMING_4775, PatchImplementation.COMPOST),
 			new FarmingPatch("", Varbits.FARMING_7904, PatchImplementation.SPIRIT_TREE)
-		));
+		), 6711);
 		add(new FarmingRegion("Kourend", 7223,
 			new FarmingPatch("East 1", Varbits.GRAPES_4953, PatchImplementation.GRAPES),
 			new FarmingPatch("East 2", Varbits.GRAPES_4954, PatchImplementation.GRAPES),
@@ -147,30 +147,29 @@ class FarmingWorld
 
 		add(new FarmingRegion("Lletya", 9265,
 			new FarmingPatch("", Varbits.FARMING_4771, PatchImplementation.FRUIT_TREE)
-		));
+		), 11103);
 
 		add(new FarmingRegion("Lumbridge", 12851,
 			new FarmingPatch("", Varbits.FARMING_4771, PatchImplementation.HOPS)
 		));
 		add(new FarmingRegion("Lumbridge", 12594,
 			new FarmingPatch("", Varbits.FARMING_4771, PatchImplementation.TREE)
-		));
+		), 12850);
 
 		add(new FarmingRegion("Morytania", 13622,
 			new FarmingPatch("Mushroom", Varbits.FARMING_4771, PatchImplementation.MUSHROOM)
-		));
+		), 13878);
 		add(new FarmingRegion("Morytania", 14391,
 			new FarmingPatch("North West", Varbits.FARMING_4771, PatchImplementation.ALLOTMENT),
 			new FarmingPatch("South East", Varbits.FARMING_4772, PatchImplementation.ALLOTMENT),
 			new FarmingPatch("", Varbits.FARMING_4773, PatchImplementation.FLOWER),
 			new FarmingPatch("", Varbits.FARMING_4774, PatchImplementation.HERB),
 			new FarmingPatch("", Varbits.FARMING_4775, PatchImplementation.COMPOST)
-		));
-
+		), 14390);
 
 		add(new FarmingRegion("Port Sarim", 12082,
 			new FarmingPatch("", Varbits.FARMING_4771, PatchImplementation.SPIRIT_TREE)
-		));
+		), 12083);
 
 		add(new FarmingRegion("Rimmington", 11570,
 			new FarmingPatch("", Varbits.FARMING_4771, PatchImplementation.BUSH)
@@ -178,7 +177,7 @@ class FarmingWorld
 
 		add(new FarmingRegion("Seers' Village", 10551,
 			new FarmingPatch("", Varbits.FARMING_4771, PatchImplementation.HOPS)
-		));
+		), 10550);
 
 		add(new FarmingRegion("Tai Bwo Wannai", 11056,
 			new FarmingPatch("", Varbits.FARMING_4771, PatchImplementation.CALQUAT)
@@ -186,11 +185,11 @@ class FarmingWorld
 
 		add(new FarmingRegion("Taverley", 11573,
 			new FarmingPatch("", Varbits.FARMING_4771, PatchImplementation.TREE)
-		));
+		), 11829);
 
 		add(new FarmingRegion("Tree Gnome Village", 9777,
 			new FarmingPatch("", Varbits.FARMING_4771, PatchImplementation.FRUIT_TREE)
-		));
+		), 10033);
 
 		add(new FarmingRegion("Troll Stronghold", 11321,
 			new FarmingPatch("", Varbits.FARMING_4771, PatchImplementation.HERB)
@@ -212,6 +211,7 @@ class FarmingWorld
 			new FarmingPatch("Hespori", Varbits.FARMING_7908, PatchImplementation.HESPORI)
 		));
 
+		//Full 3x3 region area centered on farming guild
 		add(farmingGuildRegion = new FarmingRegion("Farming Guild", 4922,
 			new FarmingPatch("", Varbits.FARMING_7905, PatchImplementation.TREE),
 			new FarmingPatch("", Varbits.FARMING_4775, PatchImplementation.HERB),
@@ -226,15 +226,17 @@ class FarmingWorld
 			new FarmingPatch("Anima", Varbits.FARMING_7911, PatchImplementation.ANIMA),
 			new FarmingPatch("", Varbits.FARMING_7910, PatchImplementation.CELASTRUS),
 			new FarmingPatch("", Varbits.FARMING_7907, PatchImplementation.REDWOOD)
-		));
+		), 5177, 5178, 5179, 4921, 4923, 4665, 4666, 4667);
 
+		//All of Prifddinas, and all of Prifddinas Underground
 		add(new FarmingRegion("Prifddinas", 13151,
-			new FarmingPatch("North", Varbits.FARMING_4771, PatchImplementation.ALLOTMENT),
-			new FarmingPatch("South", Varbits.FARMING_4772, PatchImplementation.ALLOTMENT),
-			new FarmingPatch("", Varbits.FARMING_4773, PatchImplementation.FLOWER),
-			new FarmingPatch("", Varbits.FARMING_4775, PatchImplementation.CRYSTAL_TREE),
-			new FarmingPatch("", Varbits.FARMING_4774, PatchImplementation.COMPOST) // TODO: Find correct varbit
-		));
+				new FarmingPatch("North", Varbits.FARMING_4771, PatchImplementation.ALLOTMENT),
+				new FarmingPatch("South", Varbits.FARMING_4772, PatchImplementation.ALLOTMENT),
+				new FarmingPatch("", Varbits.FARMING_4773, PatchImplementation.FLOWER),
+				new FarmingPatch("", Varbits.FARMING_4775, PatchImplementation.CRYSTAL_TREE),
+				new FarmingPatch("", Varbits.FARMING_4774, PatchImplementation.COMPOST) // TODO: Find correct varbit
+			), 12895, 12894, 13150,
+			/* Underground */ 12994, 12993, 12737, 12738, 12126, 12127, 13250);
 	}
 
 	private void add(FarmingRegion r, int... extraRegions)

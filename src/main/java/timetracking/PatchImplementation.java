@@ -2827,13 +2827,13 @@ public enum PatchImplementation
 		POISON_IVY("Poison ivy", "Poison ivy berries", PatchImplementation.BUSH, ItemID.POISON_IVY_BERRIES, 20, 9, 20, 5),
 
 		// Hop crops
-		BARLEY("Barley", "Barley", null, ItemID.BARLEY, 10, 5, 0, 3),
-		HAMMERSTONE("Hammerstone", "Hammerstone", null, ItemID.HAMMERSTONE_HOPS, 10, 5, 0, 3),
-		ASGARNIAN("Asgarnian", "Asgarnian", null, ItemID.ASGARNIAN_HOPS, 10, 6, 0, 3),
-		JUTE("Jute", "Jute", null, ItemID.JUTE_FIBRE, 10, 6, 0, 3),
-		YANILLIAN("Yanillian", "Yanillian", null, ItemID.YANILLIAN_HOPS, 10, 7, 0, 3),
-		KRANDORIAN("Krandorian", "Krandorian", null, ItemID.KRANDORIAN_HOPS, 10, 8, 0, 3),
-		WILDBLOOD("Wildblood", "Wildblood", null, ItemID.WILDBLOOD_HOPS, 10, 9, 0, 3),
+		BARLEY("Barley", "Barley", PatchImplementation.HOPS, ItemID.BARLEY, 10, 5, 0, 3),
+		HAMMERSTONE("Hammerstone", "Hammerstone", PatchImplementation.HOPS, ItemID.HAMMERSTONE_HOPS, 10, 5, 0, 3),
+		ASGARNIAN("Asgarnian", "Asgarnian", PatchImplementation.HOPS, ItemID.ASGARNIAN_HOPS, 10, 6, 0, 3),
+		JUTE("Jute", "Jute", PatchImplementation.HOPS, ItemID.JUTE_FIBRE, 10, 6, 0, 3),
+		YANILLIAN("Yanillian", "Yanillian", PatchImplementation.HOPS, ItemID.YANILLIAN_HOPS, 10, 7, 0, 3),
+		KRANDORIAN("Krandorian", "Krandorian", PatchImplementation.HOPS, ItemID.KRANDORIAN_HOPS, 10, 8, 0, 3),
+		WILDBLOOD("Wildblood", "Wildblood", PatchImplementation.HOPS, ItemID.WILDBLOOD_HOPS, 10, 9, 0, 3),
 
 		// Herb crops
 		GUAM("Guam", "Guam", PatchImplementation.HERB, ItemID.GUAM_LEAF, 20, 5, 0, 3),
@@ -2875,25 +2875,25 @@ public enum PatchImplementation
 		POTATO_CACTUS("Potato cactus", "Potato cacti", PatchImplementation.CACTUS, ItemID.POTATO_CACTUS, 10, 8, 5, 7),
 
 		// Hardwood
-		TEAK("Teak", "Teak", null, ItemID.TEAK_LOGS, 560, 8),
-		MAHOGANY("Mahogany", "Mahogany", null, ItemID.MAHOGANY_LOGS, 640, 9),
+		TEAK("Teak", "Teak", PatchImplementation.HARDWOOD_TREE, ItemID.TEAK_LOGS, 560, 8),
+		MAHOGANY("Mahogany", "Mahogany", PatchImplementation.HARDWOOD_TREE, ItemID.MAHOGANY_LOGS, 640, 9),
 
 		// Anima
-		ATTAS("Attas", "Attas", null, NullItemID.NULL_22940, 640, 9),
-		IASOR("Iasor", "Iasor", null, NullItemID.NULL_22939, 640, 9),
-		KRONOS("Kronos", "Kronos", null,  NullItemID.NULL_22938, 640, 9),
+		ATTAS("Attas", "Attas", PatchImplementation.ANIMA, NullItemID.NULL_22940, 640, 9),
+		IASOR("Iasor", "Iasor", PatchImplementation.ANIMA, NullItemID.NULL_22939, 640, 9),
+		KRONOS("Kronos", "Kronos", PatchImplementation.ANIMA,  NullItemID.NULL_22938, 640, 9),
 
 		// Special crops
-		SEAWEED("Seaweed", "Seaweed", null, ItemID.GIANT_SEAWEED, 10, 5, 0, 4),
-		GRAPE("Grape", "Grape", null, ItemID.GRAPES, 5, 8, 0, 5),
-		MUSHROOM("Mushroom", "Mushroom", null, ItemID.MUSHROOM, 40, 7, 0, 7),
-		BELLADONNA("Belladonna", "Belladonna", null, ItemID.CAVE_NIGHTSHADE, 80, 5),
-		CALQUAT("Calquat", "Calquat", null, ItemID.CALQUAT_FRUIT, 160, 9, 0, 7),
-		SPIRIT_TREE("Spirit tree", "Spirit tree", null, ItemID.SPIRIT_TREE, 320, 13),
+		SEAWEED("Seaweed", "Seaweed", PatchImplementation.SEAWEED, ItemID.GIANT_SEAWEED, 10, 5, 0, 4),
+		GRAPE("Grape", "Grape", PatchImplementation.GRAPES, ItemID.GRAPES, 5, 8, 0, 5),
+		MUSHROOM("Mushroom", "Mushroom", PatchImplementation.MUSHROOM, ItemID.MUSHROOM, 40, 7, 0, 7),
+		BELLADONNA("Belladonna", "Belladonna", PatchImplementation.BELLADONNA, ItemID.CAVE_NIGHTSHADE, 80, 5),
+		CALQUAT("Calquat", "Calquat", PatchImplementation.CALQUAT, ItemID.CALQUAT_FRUIT, 160, 9, 0, 7),
+		SPIRIT_TREE("Spirit tree", "Spirit tree", PatchImplementation.SPIRIT_TREE, ItemID.SPIRIT_TREE, 320, 13),
 		CELASTRUS("Celastrus", "Celastrus tree", PatchImplementation.CELASTRUS, ItemID.BATTLESTAFF, 160, 6, 0, 4),
 		REDWOOD("Redwood", "Redwood tree", PatchImplementation.REDWOOD, ItemID.REDWOOD_LOGS, 640, 11),
-		HESPORI("Hespori", "Hespori", null, NullItemID.NULL_23044, 640, 4, 0, 2),
-		CRYSTAL_TREE("Crystal tree", "Crystal tree", null, ItemID.CRYSTAL_SHARDS, 80, 7),
+		HESPORI("Hespori", "Hespori", PatchImplementation.HESPORI, NullItemID.NULL_23044, 640, 4, 0, 2),
+		CRYSTAL_TREE("Crystal tree", "Crystal tree", PatchImplementation.CRYSTAL_TREE, ItemID.CRYSTAL_SHARDS, 80, 7),
 
 		// Compost bins
 		EMPTY_COMPOST_BIN("Compost Bin", "Compost Bin", PatchImplementation.COMPOST, ItemID.COMPOST_BIN, 0, 1, 0, 0), // Dummy produce for the empty state
@@ -2956,48 +2956,6 @@ public enum PatchImplementation
 		Produce(String name, String contractName, PatchImplementation patchImplementation, int itemID, int tickrate, int stages)
 		{
 			this(name, contractName, patchImplementation, itemID, tickrate, stages, 0, 1);
-		}
-
-		boolean requiresHealthCheck()
-		{
-			switch (this.patchImplementation)
-			{
-				case BUSH:
-				case TREE:
-				case CACTUS:
-				case REDWOOD:
-				case CELASTRUS:
-					return true;
-			}
-			return false;
-		}
-
-		static Produce getByItemID(int itemId)
-		{
-			for (int i = 0; i < Produce.values().length; i++)
-			{
-				final Produce produce = Produce.values()[i];
-				if (produce.getItemID() == itemId)
-				{
-					return produce;
-				}
-			}
-
-			return null;
-		}
-
-		static Produce getByContractName(String contractName)
-		{
-			for (int i = 0; i < Produce.values().length; i++)
-			{
-				final Produce produce = Produce.values()[i];
-				if (produce.getContractName().equalsIgnoreCase(contractName))
-				{
-					return produce;
-				}
-			}
-
-			return null;
 		}
 
 		public String getName()
